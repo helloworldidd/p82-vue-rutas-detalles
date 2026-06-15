@@ -24,7 +24,6 @@ const routes = [
       path: '/catalog-a/:id',
       name: 'product-detail-a',
       component: ProductDetailAView,
-      props: true
     },
   {
       path: '/catalog-b/:id',

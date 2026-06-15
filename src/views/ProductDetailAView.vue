@@ -7,9 +7,9 @@ const props = defineProps({
 
 import { productos } from "@/data/productos";
 
-const producto = computed(() => {
-  return productos.find((p) => p.id === Number(props.id));
-});
+const producto = computed(() => 
+  productos.find(p => p.id === Number(props.id))
+);
 </script>
 
 <template>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1>ejemplo  metodo find</h1>
+
+
+    <script>
+const datos = [
+    {
+        id: 1,
+        nombre: 'Aros Cherry',
+        precio: 12000,
+        descripcion: 'Aros rojos estilo cherry.'
+    },
+    {
+        id: 2,
+        nombre: 'Collar Luna',
+        precio: 15000,
+        descripcion: 'Collar inspirado en la luna.'
+    },
+    {
+        id: 3,
+        nombre: 'Anillo Sol',
+        precio: 10000,
+        descripcion: 'Anillo dorado inspirado en el sol.'
+    }
+];
+
+const identificador = 2;
+const producto = datos.find(
+    item => item.id === identificador
+);
+
+console.log(producto);
+
+document.write(
+    producto.nombre +" <br>"
+    + producto.precio +" <br>"
+    + producto.descripcion
+);
+
+
+    </script>
+</body>
+</html>
